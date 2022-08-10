@@ -1,0 +1,12 @@
+.card_body_stars {
+    margin: 10px;
+    padding: 0;
+}
+
+.u_clearfix {
+    
+}
+
+.card_body_stars li {
+    display:inline-block;
+}

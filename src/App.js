@@ -2,14 +2,18 @@ import React from 'react';
 import styles from './App.module.css';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from './components/Header';
-
-console.log(styles);
+import { StarsPage } from './pages/StarsPage';
 
 const menu = [
 		{
 			path: "/",
 			name: "Домой",
 			element: (<p>Выберите задание в меню выше</p>)
+		},
+		{
+			path: "/StarsPage",
+			name: "Рейтинг фильмов",
+			element: (<StarsPage />)
 		}
 	]
 
