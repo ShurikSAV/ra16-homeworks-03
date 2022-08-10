@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './App.module.css';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from './components/Header';
-import { StarsPage } from './pages/StarsPage';
+import {StarsPage} from './pages/StarsPage';
+import {OfferListPage} from './pages/OfferListPage';
 
 const menu = [
 		{
@@ -14,6 +15,11 @@ const menu = [
 			path: "/StarsPage",
 			name: "Рейтинг фильмов",
 			element: (<StarsPage />)
+		},
+		{
+			path: "/OfferListPage",
+			name: "Список предложений",
+			element: (<OfferListPage />)
 		}
 	]
 

@@ -10,7 +10,7 @@ export const StarsPage = () => {
 		<div>
 			<ul>
 				{starsRating.map(
-						(item, i) => <li key={i} className={style.starsPage}>{item} <Stars count={item} /></li>
+					(item, i) => <li key={i} className={style.starsPage}>{item} <Stars count={item} /></li>
 				)}
 			</ul>
 		</div>
