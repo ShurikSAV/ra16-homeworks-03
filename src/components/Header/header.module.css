@@ -1,0 +1,26 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  z-index:99;
+  font-size: 25px;
+  
+  }
+  
+.linkMenu {
+    display:inline;
+    padding: 10px;
+    color: aqua;
+}
+
+.linkActive,.linkActive::after {
+    /* color:cadetblue; */
+    text-decoration: none;
+    color: aqua;
+  }
+
+.linkDisable, .linkDisable::after {
+  color: aqua;
+}

@@ -1,0 +1,15 @@
+.app {
+  text-align: center;
+}
+
+.content {
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  background-color: gray;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
