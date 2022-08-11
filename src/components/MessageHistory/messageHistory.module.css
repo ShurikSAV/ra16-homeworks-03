@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.align_left {
+    text-align: left;
+  }
+  
+.align_right {
+    text-align: right;
+  }
+
+.message_data {
+    margin-bottom: 15px;
+  }
+.message_data_time {
+    color: #a8aab1;
+    padding-left: 6px;
+  }
+.message {
+    color: white;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    width: 90%;
+    position: relative;
+  }
+
+.message:after {
+    bottom: 100%;
+    left: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #86BB71;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+  .my-message {
+    background: #86BB71;
+  }
+  .other-message {
+    background: #94C2ED;
+  }
+  .other-message:after {
+    border-bottom-color: #94C2ED;
+    left: 93%;
+  }
+  
+  textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    font: 14px/22px "Lato", Arial, sans-serif;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+  }
+  .fa-file-o, .fa-file-image-o {
+    font-size: 16px;
+    color: gray;
+    cursor: pointer;
+  }
+  

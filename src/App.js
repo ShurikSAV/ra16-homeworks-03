@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from './components/Header';
 import {StarsPage} from './pages/StarsPage';
 import {OfferListPage} from './pages/OfferListPage';
+import { ChatHistoryPage } from './pages/ChatHistoryPage';
 
 const menu = [
 	{
@@ -20,6 +21,11 @@ const menu = [
 		path: "/OfferListPage",
 		name: "Список предложений",
 		element: (<OfferListPage />)
+	},
+	{
+		path: "/ChatHistory",
+		name: "История сообщений в чате",
+		element: (<ChatHistoryPage />)
 	}
 ]
 
