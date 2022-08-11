@@ -12,11 +12,14 @@ const catalogShop = JSON.parse(jsonData)
 console.log(catalogShop)
 /**/
 
-
 export const OfferListPage = () => {
 	return (
-		<div className={style.OfferListPage}>
-			<Listing></Listing>
+		<div className={style.offerListPage}>
+			<div className={style.item_list}>
+				{catalogShop.map(
+					(item) => <Listing key={item.listing_id} item={item} />
+					)}
+			</div>
 		</div>
 	)
 }

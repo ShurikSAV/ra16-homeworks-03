@@ -6,22 +6,22 @@ import {StarsPage} from './pages/StarsPage';
 import {OfferListPage} from './pages/OfferListPage';
 
 const menu = [
-		{
-			path: "/",
-			name: "Домой",
-			element: (<p>Выберите задание в меню выше</p>)
-		},
-		{
-			path: "/StarsPage",
-			name: "Рейтинг фильмов",
-			element: (<StarsPage />)
-		},
-		{
-			path: "/OfferListPage",
-			name: "Список предложений",
-			element: (<OfferListPage />)
-		}
-	]
+	{
+		path: "/",
+		name: "Домой",
+		element: (<p>Выберите задание в меню выше</p>)
+	},
+	{
+		path: "/StarsPage",
+		name: "Рейтинг фильмов",
+		element: (<StarsPage />)
+	},
+	{
+		path: "/OfferListPage",
+		name: "Список предложений",
+		element: (<OfferListPage />)
+	}
+]
 
 function App() {
 	return (
