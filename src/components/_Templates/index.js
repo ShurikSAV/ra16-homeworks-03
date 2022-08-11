@@ -1,17 +1,17 @@
 import React from 'react'
 //import PropTypes from 'prop-types';
-import style from './listing.module.css'
+import style from './templates.module.css'
 
-export const Listing = ({count}) => {
+export const Templates = () => {
 	return (
 		<div className={style.body}>
-
+			Templates
 		</div>
 	)
 }
 
 /*
-Listing.propTypes = {
+Templates.propTypes = {
 	count: PropTypes.number
 	}
 */
