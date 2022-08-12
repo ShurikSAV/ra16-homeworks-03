@@ -1,6 +1,5 @@
 import React from 'react'
 import { MessageHistory } from '../../components/MessageHistory';
-//import PropTypes from 'prop-types';
 import style from './templates.module.css'
 
 const messages = [{
@@ -47,9 +46,3 @@ export const ChatHistoryPage = () => {
 		</div>
 	)
 }
-
-/*
-ChatHistoryPage.propTypes = {
-	count: PropTypes.number
-	}
-*/

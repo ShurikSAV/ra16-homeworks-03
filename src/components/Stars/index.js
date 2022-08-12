@@ -17,4 +17,4 @@ export const Stars = ({count}) => {
 
 Stars.propTypes = {
 	count: PropTypes.number
-	}
+}

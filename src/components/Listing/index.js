@@ -1,10 +1,10 @@
 import React from 'react'
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import style from './listing.module.css'
 
 //TODO Если название предложения привышает 50 символов, то необходимо выводить только первые 50 символов, и добавлять символ … в конце.
 //"state": "removed",
-export const Listing = ({item = {}}) => {
+export const Listing = ({item}) => {
 	const {state, url, MainImage, title, currency_code, price, quantity} = item
 	
 	if(state === "removed") return null
@@ -44,9 +44,21 @@ export const Listing = ({item = {}}) => {
 		</div>
 	)
 }
+Listing.defaultProps = {
+	item: {}
+}
 
-/*
 Listing.propTypes = {
-	count: PropTypes.number
-	}
-*/
+	item: PropTypes.shape({
+		state: PropTypes.string, 
+		url: PropTypes.string,
+		MainImage: PropTypes.shape({
+			url_570xN: PropTypes.string
+		}), 
+		title: PropTypes.string, 
+		currency_code: PropTypes.string,
+		price: PropTypes.string, 
+		quantity: PropTypes.number
+		}
+	)
+}
